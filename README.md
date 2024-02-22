@@ -9,7 +9,7 @@ Recommended Dokuwiki version: **54.1+**
 
 ## Required
 
-- Mediawiki 54.1 or possibly earlier
+- Dokuwiki 54.1 or possibly earlier
 - Extension authsplit (version of 2024-02-22) or possibly earlier
 - Extension authldap (version of 2024-02-17) or possibly earlier
 
