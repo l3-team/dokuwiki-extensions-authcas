@@ -9,6 +9,8 @@ Recommended Dokuwiki version: **54.1+**
 
 ## Required
 
+- Apache 2.4
+- PHP 8.3+
 - Dokuwiki 54.1 or possibly earlier
 - Extension authsplit (version of 2024-02-22) or possibly earlier
 - Extension authldap (version of 2024-02-17) or possibly earlier
