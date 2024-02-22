@@ -30,7 +30,7 @@
 //require_once(DOKU_INC . 'lib/plugins/authldap/auth.php');
 //include_once(DOKU_INC . 'lib/plugins/authcas/CAS-1.3.4/CAS.php');
 //include_once(DOKU_INC . 'lib/plugins/authcas/CAS-1.3.8/CAS.php');
-include_once(DOKU_INC . 'lib/plugins/authcasudl/vendor/autoload.php');
+include_once(DOKU_INC . 'lib/plugins/authcas/vendor/autoload.php');
 
 class auth_plugin_authcas extends DokuWiki_Auth_Plugin {
 
