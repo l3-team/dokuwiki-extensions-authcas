@@ -38,7 +38,7 @@ $conf['plugin']['authcas']['server'] = 'cas.univ.fr';
 $conf['plugin']['authcas']['port'] = 443;
 // CAS server root parameter
 $conf['plugin']['authcas']['rootcas'] = '';
-$conf['plugin']['authcas']['hostURL'] = 'https://mediawikis.host.com';
+$conf['plugin']['authcas']['hostURL'] = 'https://dokuwiki.host.com';
 // automatically log the user when there is already a CAS session opened
 $conf['plugin']['authcas']['autologin'] = 1;
 $conf['plugin']['authcas']['caslogout'] = 1;
