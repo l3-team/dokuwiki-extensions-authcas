@@ -20,7 +20,7 @@ Recommended Dokuwiki version: **54.1+**
 - the [authldap](https://www.dokuwiki.org/plugin:authldap) extension
 to be installed first.
 
-* Download and place the file(s) in a directory called authcas in your lib/plugin/ folder.
+* Download and place the file(s) in a directory called authcas in your lib/plugins/ folder.
 * Launch this command in the directory to install composer packages (dependencies of Cas package like apereo/phpcas) from composer.json and composer.lock :
 ```
 composer install
