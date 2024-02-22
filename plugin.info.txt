@@ -1,0 +1,7 @@
+base   authcas
+author Mathieu Hetru
+email  mathieu.hetru@univ-lille.fr
+date   2024-02-22
+name   Auth CAS plugin
+desc   Provides authentication against CAS server
+url    https://github.com/l3-team/dokuwiki-extensions-authcas
