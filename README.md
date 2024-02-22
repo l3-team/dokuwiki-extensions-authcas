@@ -16,7 +16,7 @@ Recommended Dokuwiki version: **54.1+**
 ## Installation
 
 > This extension requires :
-- the [authsplit](https://www.mediawiki.org/wiki/Extension:PluggableAuth) extension
+- the [authsplit](https://www.dokuwiki.org/plugin:authsplit) extension
 - the [authldap](https://www.dokuwiki.org/plugin:authldap) extension
 to be installed first.
 
