@@ -11,7 +11,7 @@ Recommended Dokuwiki version: **54.1+**
 
 - Apache 2.4
 - PHP 8.3+
-- Dokuwiki 54.1 or possibly earlier
+- Dokuwiki 54.1 (Jack Jack Rum) or possibly earlier
 - Extension authsplit (version of 2024-02-22) or possibly earlier
 - Extension authldap (version of 2024-02-17) or possibly earlier
 
@@ -60,3 +60,10 @@ $conf['plugin']['authldap']['userfilter']  = '(uid=%{user})';
 $conf['plugin']['authldap']['groupfilter'] = '(member=uid=%{user},ou=people,dc=univ,dc=fr)';
 $conf['plugin']['authldap']['version']    = 3;
 ```
+
+
+## Reload config of your wiki
+```
+touch local.protected.php
+```
+
