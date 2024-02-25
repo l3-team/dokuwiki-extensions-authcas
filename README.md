@@ -5,7 +5,7 @@ The **CAS** extension extends :
 - the [authldap](https://www.dokuwiki.org/plugin:authldap) extension
 to provide authentication using [Apereo CAS phpCAS](https://github.com/apereo/phpCAS).
 
-Recommended Dokuwiki version: **54.1+**
+Recommended Dokuwiki version: **54.1+** (Jack Jack Rum or possibly earlier)
 
 ## Required
 
