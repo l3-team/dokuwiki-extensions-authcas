@@ -8,7 +8,7 @@ to provide authentication using [Apereo CAS phpCAS](https://github.com/apereo/ph
 
 Recommended Dokuwiki version: **54.1+** (Jack Jack Rum or possibly earlier)
 
-## Required
+## Requisites
 
 - Apache 2.4
 - PHP 8.3+
