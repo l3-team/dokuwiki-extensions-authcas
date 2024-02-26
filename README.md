@@ -1,8 +1,9 @@
 # Dokuwiki CAS extension
 
-The **CAS** extension extends :
+The **CAS** extension uses :
 - the [authsplit](https://www.dokuwiki.org/plugin:authsplit) extension
 - the [authldap](https://www.dokuwiki.org/plugin:authldap) extension
+
 to provide authentication using [Apereo CAS phpCAS](https://github.com/apereo/phpCAS).
 
 Recommended Dokuwiki version: **54.1+** (Jack Jack Rum or possibly earlier)
