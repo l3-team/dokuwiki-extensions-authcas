@@ -30,6 +30,7 @@ composer install
 * Add the following code at the bottom of your local.protected.php and configures settings:
 
 ```php
+$conf['superuser'] = 'mhetru';
 $conf['superuser'] = $conf['superuser'].',@GROUP-ADMIN';
 $conf['authtype']    = 'authsplit';
 $conf['plugin']['authsplit']['primary_authplugin'] = 'authcas';
