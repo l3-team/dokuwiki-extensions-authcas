@@ -22,12 +22,16 @@ Recommended Dokuwiki version: **54.1+** (Jack Jack Rum or possibly earlier)
 - the [authldap](https://www.dokuwiki.org/plugin:authldap) extension
 to be installed first.
 
-* Download and place the file(s) in a directory called authcas in your lib/plugins/ folder.
-* Launch this command in the directory to install composer packages (dependencies of Cas package like apereo/phpcas) from composer.json and composer.lock :
+* Download the plugin from the extension manager of dokuiki or manually place the file(s) in a directory called authcas in your lib/plugins/ folder.
+* The plugin is provided with apereo/phpcas version 1.6.1 but if you want change the version you can modify composer.json and launch this command in the directory to install composer packages (dependencies of Cas package like apereo/phpcas) from composer.json and composer.lock :
 ```
 composer install
 ```
-* Add the following code at the bottom of your local.protected.php and configures settings:
+or
+```
+composer update
+```
+* Here are the values that you can find in the config of your wiki in local.protected.php :
 
 ```php
 $conf['superuser'] = 'mhetru';
