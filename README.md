@@ -18,8 +18,8 @@ Recommended Dokuwiki version: **54.1+** (Jack Jack Rum or possibly earlier)
 ## Installation
 
 > This extension requires :
-- the [authsplit](https://www.dokuwiki.org/plugin:authsplit) extension
-- the [authldap](https://www.dokuwiki.org/plugin:authldap) extension
+- the [authsplit](https://www.dokuwiki.org/plugin:authsplit) extension : in order to combine the plugin authcas and authldap
+- the [authldap](https://www.dokuwiki.org/plugin:authldap) extension : in order to have access to the acl of the wiki
 to be installed first.
 
 * Download the plugin from the extension manager of dokuwiki or manually place the file(s) in a directory called authcas in your lib/plugins/ folder.
