@@ -173,7 +173,9 @@ class auth_plugin_authcas extends DokuWiki_Auth_Plugin {
 
     public function getCurrentPageURL() {
         $pageURL = 'http';
-        if ($_SERVER["HTTP_HTTPS"] == "on") {
+        if ( (isset($_SERVER["HTTP_HTTPS"])) && ($_SERVER["HTTP_HTTPS"] == "on") ) { // for reverse proxy / front proxy
+            $pageURL .= "s";
+        } else if ( (isset($_SERVER["HTTPS"])) && ($_SERVER["HTTPS"] == "on") ) { // for backend / local server
             $pageURL .= "s";
         }
         $pageURL .= "://";
