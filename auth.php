@@ -27,8 +27,6 @@
  * - Trusted CAS hosts : to handle CAS logout request you need to precis a list of trusted cas hosts like this :
  *     $conf['plugin']['authcas']['handlelogoutrequestTrustedHosts'] = Array("cas.mdl29.net", "cas2.mdl29.net");
  */
-//require_once(DOKU_INC . 'lib/plugins/authldap/auth.php');
-//include_once(DOKU_INC . 'lib/plugins/authcas/CAS-1.3.4/CAS.php');
 //include_once(DOKU_INC . 'lib/plugins/authcas/CAS-1.3.8/CAS.php');
 include_once(DOKU_INC . 'lib/plugins/authcas/vendor/autoload.php');
 
@@ -43,7 +41,7 @@ class auth_plugin_authcas extends DokuWiki_Auth_Plugin {
 
         $logfile = $this->getConf("logFile");
         if (!empty($logfile)) {
-            // phpCAS::setDebug($this->getConf("logFile"));
+            //phpCAS::setDebug($this->getConf("logFile")); // for phpcas 1.3.8
             \phpCAS::setLogger($this->getConf("logFile"));
         } //If $conf['plugin']['authcas']['logFile'] exist we start phpCAS in debug mode
         else \phpCAS::setLogger();
@@ -52,6 +50,7 @@ class auth_plugin_authcas extends DokuWiki_Auth_Plugin {
 
         //Note the last argument true, to allow phpCAS to change the session_id so he will be able to destroy the session after a CAS logout request - Enable Single Sign Out
         // curl extension is needed
+        //phpCAS::client(CAS_VERSION_2_0, $this->getConf('server'), (int) $this->getConf('port'), $this->getConf('rootcas'), true); // for phpcas 1.3.8
         \phpCAS::client(CAS_VERSION_2_0, $this->getConf('server'), (int) $this->getConf('port'), $this->getConf('rootcas'), $this->getConf('hostURL'), true);
 
         if (!function_exists('curl_init')) {
@@ -147,14 +146,14 @@ class auth_plugin_authcas extends DokuWiki_Auth_Plugin {
         global $QUERY;
         //$login_url = DOKU_URL . 'doku.php?id=' . $QUERY;
         $login_url = $this->getCurrentPageURL();
-        // \phpCAS::setFixedServiceURL($login_url);
+        // \phpCAS::setFixedServiceURL($login_url); // disabled because can't run in many cases
         \phpCAS::forceAuthentication();
     }
 
     public function logOff() {
         global $QUERY;
         if ($this->getConf('caslogout')) { // dokuwiki + cas logout
-            dbglog(session_id());
+            //dbglog(session_id());
 
             @session_start();
             //session_destroy();
