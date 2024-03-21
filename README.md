@@ -72,3 +72,6 @@ $conf['plugin']['authldap']['version']    = 3;
 touch local.protected.php
 ```
 
+## Troubleshooting
+- if you have a blank page, you must configure the plugin in local.protected.php
+
