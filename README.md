@@ -74,4 +74,4 @@ touch local.protected.php
 
 ## Troubleshooting
 - if you have a blank page, you must configure the plugin in local.protected.php
-
+- it seems to be compatible with the ad plugin, not only ldap plugin
